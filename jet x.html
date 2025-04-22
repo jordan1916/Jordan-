@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JetX - Personal Fun Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>JetX Game</h1>
+        <div class="balance">
+            <p>Balance: <span id="balance">1000</span> Coins</p>
+        </div>
+        <div class="bet">
+            <input type="number" id="betAmount" placeholder="Enter Bet Amount" min="1">
+            <button id="startButton">Start Round</button>
+        </div>
+        <div class="auto-cashout">
+            <label for="autoCashout">Auto Cashout at:</label>
+            <input type="number" id="autoCashout" min="1" max="100" step="1" placeholder="e.g. 2">
+        </div>
+        <div class="player-name">
+            <label for="playerName">Enter your name:</label>
+            <input type="text" id="playerName" placeholder="Your Name">
+        </div>
+        <div class="plane-container">
+            <div id="plane"></div>
+        </div>
+        <div class="multiplier">
+            <p>Multiplier: <span id="multiplier">1x</span></p>
+        </div>
+        <div class="cashout">
+            <button id="cashoutButton" disabled>Cash Out</button>
+        </div>
+        <div class="message" id="message"></div>
+        <div class="history">
+            <h3>Bet History</h3>
+            <ul id="historyList"></ul>
+        </div>
+        <div class="leaderboard">
+            <h3>Leaderboard</h3>
+            <ul id="leaderboardList"></ul>
+        </div>
+        <div class="reset">
+            <button id="resetButton">Reset Game</button>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
